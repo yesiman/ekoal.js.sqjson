@@ -144,19 +144,4 @@ angular.module('starter.services', [])
             });
         },
     }
-})
-.factory("toolbox", function ($rootScope) {
-    return {
-        getTheme: function () {
-            switch ($rootScope.user.orga)
-            {
-                case "5835c65b7e1a281200774d2f":
-                    return "theme-vivea";
-                case "592ed00b18358d11001e84b2":
-                    return "theme-sca";
-                default:
-                    return "theme-arifel";
-            }
-        }
-    }
 });
